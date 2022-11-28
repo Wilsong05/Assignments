@@ -1,4 +1,4 @@
-package mini_project;
+ 
 import java.util.*;
 
 class NumberRange{
