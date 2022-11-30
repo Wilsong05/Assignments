@@ -20,7 +20,7 @@ public class PanagramCheck {
          
         char[] ch =s.toCharArray();
         
-        char[] temp =new char[25];
+        char[] temp =new char[26];
         
         for(int i=0;i<ch.length;i++)
         {
