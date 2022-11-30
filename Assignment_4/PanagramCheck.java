@@ -4,7 +4,10 @@ public class PanagramCheck {
 
     public static void main(String[] args) {
         
-        String s="The quick brown fox jumps over the lazy dog";
+        String s="wilsong";
+        
+        s.replace(" ", "");
+        s=s.toUpperCase();
         
         if(panagram(s)) {
             System.out.println("Panagaram");
@@ -15,15 +18,20 @@ public class PanagramCheck {
 
     private static boolean panagram(String s) {
          
-        for(int i=0;i<s.length();i++)
+        char[] ch =s.toCharArray();
+        
+        char[] temp =new char[25];
+        
+        for(int i=0;i<ch.length;i++)
         {
-            if(s.charAt(i)>='a' && s.charAt(i)<='z') {
-                return true;
-            }
-            else if(s.charAt(i)>='a' && s.charAt(i)<='z')
-                return true;
+            temp[ch[i]-65]++;
         }
-        return false;
+        
+        for(int j=0;j<ch.length;j++)
+            if(temp[j]!=1)
+                return false;
+        
+        return true;
     }
     
 
