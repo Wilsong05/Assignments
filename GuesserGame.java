@@ -172,7 +172,7 @@ class Umpire{
     
 }
     
-public class GuessGame {
+public class GuesserGame {
 
     public static void main(String[] args) {
          
